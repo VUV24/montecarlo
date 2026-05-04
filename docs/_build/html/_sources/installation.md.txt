@@ -1,8 +1,5 @@
 # Installation
 
-## Stable release
-
-
 You will need an environment with the following packages:
 * Python 3.11
 * NumPy
@@ -13,39 +10,3 @@ environment using
 pip install -e .
 ```
 from the top-level montecarlo/ directory. 
-
-
-To install montecarlo, run this command in your terminal:
-
-```sh
-uv add montecarlo
-```
-
-Or if you prefer to use `pip`:
-
-```sh
-pip install montecarlo
-```
-
-## From source
-
-The source files for montecarlo can be downloaded from the [Github repo](https://github.com/VUV24/montecarlo).
-
-You can either clone the public repository:
-
-```sh
-git clone https://github.com/VUV24/montecarlo
-```
-
-Or download the [tarball](https://github.com/VUV24/montecarlo/tarball/main):
-
-```sh
-curl -OJL https://github.com/VUV24/montecarlo/tarball/main
-```
-
-Once you have a copy of the source, you can install it with:
-
-```sh
-cd montecarlo
-uv sync
-```
