@@ -1,16 +1,21 @@
 import numpy as np
 import networkx as nx
-import matplotlib.pyplot as plt
 import random
 import scipy
 from .bitstring import BitString
 
 class IsingHamiltonian:
+    """
+    Represents an Ising Hamiltonian on a graph.
+    """
     def __init__(self, G: nx.Graph):
         self.G = G
         self.mus = np.zeros(G.number_of_nodes())
         
     def energy(self, bs: BitString):
+        """
+        Compute the energy of a given spin configuration.
+        """
         G = self.G
         
         energy = 0.0
@@ -27,6 +32,9 @@ class IsingHamiltonian:
         return energy
 
     def compute_average_values(self, T: float):
+        """
+        Compute thermodynamic averages by summing over all configurations.
+        """
         E  = 0.0
         M  = 0.0
         Z  = 0.0
@@ -58,4 +66,7 @@ class IsingHamiltonian:
         return E, M, HC, MS 
     
     def set_mu(self, mus: np.array):
+        """
+        Set the local mus for each site.
+        """
         self.mus = mus
