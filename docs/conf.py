@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'motecarlo'
+project = 'montecarlo'
 copyright = '2026, Ved Vyas'
 author = 'Ved Vyas'
 
@@ -46,5 +46,5 @@ autodoc_default_options = {
 'undoc-members': True,
 'show-inheritance': True,
 }
-autodoc_mock_imports = ['numpy']
+autodoc_mock_imports = ['numpy', 'scipy', 'matplotlib', 'networkx']
 

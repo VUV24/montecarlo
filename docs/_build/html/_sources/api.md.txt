@@ -4,8 +4,9 @@
 
 ```{eval-rst}
 .. automodule:: montecarlo
-:members:
-:imported-members:
-:undoc-members:
-:show-inheritance:
+   :members:
+   :imported-members:
+   :undoc-members:
+   :show-inheritance:
+
 ```
